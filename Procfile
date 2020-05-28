@@ -1,1 +1,1 @@
-web: gunicorn btre-project-avborik.wsgi --log-file -
+web: gunicorn btre28.wsgi --log-file -
