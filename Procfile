@@ -1,0 +1,1 @@
+web: gunicorn btre-project-avborik.wsgi --log-file -
