@@ -88,7 +88,7 @@ DATABASES = {
         'USER': 'DB_USER',
         'PASSWORD': 'DB_PASSWORD',
         'HOST': 'DB_HOST',
-        'PORT': '',
+        'PORT': 'DB_PORT',
     }
 }
 SECRET_KEY = config('SECRET_KEY')
