@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'SECRET_KEY'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
@@ -152,9 +152,9 @@ MEDIA_URL = '/media/'
 # Email config
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER='EM_HOST'
-EMAIL_HOST_PASSWORD='EMPASS'
-EMAIL_USE_TLS=True
+EMAIL_HOST_USER = config('EM_HOST')
+EMAIL_HOST_PASSWORD = config('EMPASS')
+EMAIL_USE_TLS = True
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
