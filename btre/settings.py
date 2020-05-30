@@ -150,7 +150,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR,'btre/static/media')
 MEDIA_URL = '/media/'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.whitenoise.storage.CompressedStaticFilesStorage'
 # Messages
 # Email config
 EMAIL_HOST = 'smtp.gmail.com'
