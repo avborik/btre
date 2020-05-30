@@ -147,7 +147,7 @@ STATICFILES_DIRS = [
 
 # Media folder settings set diffrent folder
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR,'staticfiles/btre/static/media')
 MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.django.whitenoise.storage.CompressedStaticFilesStorage'
